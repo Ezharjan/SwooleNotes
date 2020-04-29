@@ -4,9 +4,9 @@
 
 # Utilization
 1. Install PHP7 on a computer which has a Linux environment, cent os for example, for running php codes.
-2. Install Swoole in a Linux environment, cent os for example.
+2. Install Swoole.
 3. Run "php file_name.php" to open the server.
-4. Open another terminal to see the running status by commanding "netstat -anp | grep port_number".
+4. Open another terminal to see the running state by commanding "netstat -anp | grep port_number".
 5. Type Ctrl+C to quit running.
 
 
