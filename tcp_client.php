@@ -9,10 +9,10 @@ if (!$client->connect("127.0.0.1",9501)) {
 }
 
 fwrite(STDOUT, "Please enter your message:");
-$message = trim(fgets(STDIN));
+$msg = trim(fgets(STDIN));
 
 //发送消息给TCP服务器
-client->send($message);
+$client->send($msg);
 
 //接收来自服务端的消息
 $result = $client->recv();
