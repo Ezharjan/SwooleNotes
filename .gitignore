@@ -9,8 +9,9 @@
 
 # IDE cache directory
 .vs/
-.idea/
+.idea/workspace.xml
 **/.idea/
+.idea/
 
 # Gradle cache directory
 .gradle/
