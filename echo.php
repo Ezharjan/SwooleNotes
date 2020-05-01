@@ -4,14 +4,12 @@ $serv = new swoole_server("0.0.0.0", 9501);
 //	echo "[#".posix_getpid()."]\tClient@[$fd:$reactor_id]: Connect.\n";
 //});
 $serv->set(array(
-    'worker_num' => 1,
-
+    'worker_num' => 1
 ));
 
 $serv->on('receive', function (swoole_server $serv, $fd, $reactor_id, $data) {
-	echo "[#".$serv->worker_id."]\tClient[$fd] receive data: $data\n";
-    if ($serv->send($fd, "hello {$data}\n") == false)
-    {
+    echo "[#" . $serv->worker_id . "]\tClient[$fd] receive data: $data\n";
+    if ($serv->send($fd, "hello {$data}\n") == false) {
         echo "error\n";
     }
 

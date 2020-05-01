@@ -29,3 +29,7 @@ $serv->on('Close', function ($serv, $fd) {
 
 //启动服务器
 $serv->start();
+
+//Test auto matic upload code enabled for server based development
+
+
